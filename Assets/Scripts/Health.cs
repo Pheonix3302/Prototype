@@ -31,6 +31,7 @@ public class Health : MonoBehaviour
     {
         if (isDead) return;
         currentHealth -= amount;
+        Debug.Log("Health Remaining" + currentHealth);
 
         if (currentHealth <=0)
         {
